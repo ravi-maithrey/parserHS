@@ -1,8 +1,9 @@
 module Main where
 
-import qualified MyLib (someFunc)
+import Text.ParserCombinators.Parsec hiding (spaces)
+
 
 main :: IO ()
 main = do
   putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+
